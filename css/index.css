@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,8 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
 * {
     box-sizing: border-box;
+    border: 0px solid red;
 }
 
 html{
@@ -65,6 +69,11 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
+
+p {
+    line-height: 1.2;
+}
+
 section, footer{
     padding:4% 0;
 }
@@ -73,21 +82,70 @@ section, footer{
     margin: 0 auto;
 }
 
+/*Header Section Styles*/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.logo {
+    width: 20rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-img {
+    width: 100%;
+    padding: 10% 0;
+    background-image: url('../img/jumbo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 /*Top Section Styles*/
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4%;
+    margin-bottom: 1rem;
     border-bottom: 2px solid #ff4b00;
-    text-align: justify;
+    text-align: left;
+}
+
+.top-content h2{
+    text-align: center;
+    line-height: 5rem;
 }
 
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+    width: 50%;
+    padding: 0 2%;
+    padding-bottom: 1rem;  
 }
 
 /*Middle Section Styles*/
