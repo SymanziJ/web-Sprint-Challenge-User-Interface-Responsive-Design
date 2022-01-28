@@ -335,9 +335,14 @@ footer nav a{
         padding: .6rem;
     }
 
+    /*About Page Responsive Styles*/
 
+    .desc-content {
+        width: 100%;
+    }
 
-
-
+    .desc-content h2{
+        text-align: center;
+    }
 
 }
