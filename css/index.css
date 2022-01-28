@@ -260,12 +260,12 @@ footer nav a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
 }
-
 
 .desc-content {
     width: 45%;
-    margin-bottom: 1rem;
+    padding: 3rem 0;
     border-bottom: 2px solid #ff4b00;
 }
 
@@ -273,7 +273,9 @@ footer nav a{
     width: 100%;
 }
 
-
+.desc-content h2{
+    line-height: 5rem;
+}
 
 .bottom-content .text-container.about-page {
     width: 100%;
@@ -281,3 +283,61 @@ footer nav a{
 }
 
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .logo {
+        padding: 2rem 0;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content h2 {
+        text-align: center;
+    }
+
+    .middle-content .boxes .box {
+        width: 44%;
+        padding: 16% 0;
+        margin: 3%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-content h2 {
+        text-align: center;
+    }
+
+    .bottom-content .text-container {
+        width: 100%;
+    }
+
+    footer nav {
+        margin: 0;
+    }
+
+    footer nav a {
+        padding: .6rem;
+    }
+
+
+
+
+
+
+}
