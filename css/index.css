@@ -229,10 +229,6 @@ nav {
     margin: 0 2%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
 /*Footer Styles*/
 footer {
     display: flex;
@@ -256,5 +252,32 @@ footer nav a{
 
 /*About Page Styles*/
 
+.header-img.about-page{
+    background-image: url('../img/jumbo-about.png');
+}
+
+.descriptions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.desc-content {
+    width: 45%;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.desc-content img {
+    width: 100%;
+}
+
+
+
+.bottom-content .text-container.about-page {
+    width: 100%;
+    margin: 0;
+}
 
 /*Responsive Styles*/
