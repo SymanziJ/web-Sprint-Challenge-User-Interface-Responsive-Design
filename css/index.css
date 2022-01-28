@@ -150,7 +150,8 @@ nav {
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -161,15 +162,56 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
+    width: 16%;
+    padding: 5.5% 0;
+    margin: 2%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.teal {
+    background: teal;
+}
+
+.gold {
+    background: gold;
+}
+
+.cadetblue {
+    background: cadetblue;
+}
+
+.coral {
+    background: coral;
+}
+
+.crimson {
+    background: crimson;
+}
+
+.forestgreen {
+    background: forestgreen;
+}
+
+.darkorchid {
+    background: darkorchid;
+}
+
+.hotpink {
+    background: hotpink;
+}
+.indigo {
+    background: indigo;
+}
+
+.dodgerblue {
+    background: dodgerblue;
 }
 
 /*Bottom Section Styles*/
