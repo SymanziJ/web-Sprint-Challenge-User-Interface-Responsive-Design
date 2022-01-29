@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,9 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* --- end of meyerweb reset --- */
+
 
 * {
     box-sizing: border-box;
+    border: 0px solid red;
 }
 
 html{
@@ -65,6 +68,11 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
+
+p {
+    line-height: 1.2;
+}
+
 section, footer{
     padding:4% 0;
 }
@@ -73,26 +81,78 @@ section, footer{
     margin: 0 auto;
 }
 
+
+/*Header Section Styles*/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.logo {
+    width: 20rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-img {
+    width: 100%;
+    padding: 10% 0;
+    background-image: url('../img/jumbo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 /*Top Section Styles*/
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4%;
+    margin-bottom: 1rem;
     border-bottom: 2px solid #ff4b00;
-    text-align: justify;
+    text-align: left;
+}
+
+.top-content h2{
+    text-align: center;
+    line-height: 5rem;
 }
 
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+    width: 50%;
+    padding: 0 2%;
+    padding-bottom: 1rem;  
 }
 
+
 /*Middle Section Styles*/
+
 .middle-content {
-    margin-bottom: 4%;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -103,38 +163,185 @@ section, footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
+    width: 16%;
+    padding: 5.5% 0;
+    margin: 2%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.teal {
+    background: teal;
+}
+.gold {
+    background: gold;
+}
+.cadetblue {
+    background: cadetblue;
+}
+.coral {
+    background: coral;
+}
+.crimson {
+    background: crimson;
+}
+.forestgreen {
+    background: forestgreen;
+}
+.darkorchid {
+    background: darkorchid;
+}
+.hotpink {
+    background: hotpink;
+}
+.indigo {
+    background: indigo;
+}
+.dodgerblue {
+    background: dodgerblue;
+}
+
+
 /*Bottom Section Styles*/
+
 .bottom-content {
     display: flex;
     justify-content: space-between;
 }
 
-.bottom-content .text-container {
-    width:25%;
+.bottom-content h2 {
+    line-height: 5rem;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.bottom-content .text-container {
+    width: 30%;
+    margin: 0 2%;
 }
+
 
 /*Footer Styles*/
+
 footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 3rem;
     background-color: #ff4b00;
 }
 
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 60rem;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /*About Page Styles*/
+
+.header-img.about-page{
+    background-image: url('../img/jumbo-about.png');
+}
+
+.descriptions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.desc-content {
+    width: 45%;
+    padding: 3rem 0;
+    border-bottom: 2px solid #ff4b00;
+}
+
+.desc-content img {
+    width: 100%;
+}
+
+.desc-content h2{
+    line-height: 5rem;
+}
+
+.bottom-content .text-container.about-page {
+    width: 100%;
+    margin: 0;
+}
 
 
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .logo {
+        padding: 2rem 0;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content h2 {
+        text-align: center;
+    }
+
+    .middle-content .boxes .box {
+        width: 44%;
+        padding: 16% 0;
+        margin: 3%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-content h2 {
+        text-align: center;
+    }
+
+    .bottom-content .text-container {
+        width: 100%;
+    }
+
+    footer nav {
+        margin: 0;
+    }
+
+    footer nav a {
+        padding: .6rem;
+    }
+
+    /*About Page Responsive Styles*/
+
+    .desc-content {
+        width: 100%;
+    }
+
+    .desc-content h2{
+        text-align: center;
+    }
+
+}
